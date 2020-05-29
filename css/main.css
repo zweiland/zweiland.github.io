@@ -1,0 +1,48 @@
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	text-align: center;
+}
+
+header {
+	margin-top: 3em;
+}
+header h2 {
+	color: #999;
+}
+
+article {
+	margin: 3em 0;
+}
+
+a.button {
+	background: black;
+	color: white;
+	display: inline-block;
+	padding: 1em 3em;
+	text-decoration: none;
+	transition: background .2s;
+}
+a.button:hover {
+	background: #008000;
+}
+.social {
+	font-size: 1.5em;
+	margin: 2em 0;
+}
+.social a {
+	color: black;
+	display: inline-block;
+	transition: color .2s;
+}
+.social a:hover {
+	color: #069;
+}
+
+@media screen and (min-width: 35em) {
+	body {
+		font-size: 1.2em;
+	}
+	header {
+		margin-top: 20vh;
+	}
+}

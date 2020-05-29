@@ -1,0 +1,935 @@
+
+/* 
+  :: Reset
+*/
+
+.red { color: #ed1c24; }
+.yellow { color: #eab632; }
+.row .dark { color: black; }
+.green { color: #39b54a; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  background-color: #1a1a1a;
+  background-image: url(http://www.roehl.jobs/Content/public/images/bg_bodybottom.png);
+  background-repeat: repeat;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+div, section, button, a, header, footer, ul, ol, input, li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: top;  
+}
+
+.table {
+  display: table;
+}
+
+.v-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.v-cell-bottom {
+  display: table-cell;
+  vertical-align: bottom;  
+}
+
+
+/* 
+  :: RWD Resets
+*/
+
+html {
+  overflow-y: auto;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+  :: Typography
+*/
+
+body {
+ -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-align: center;
+  color: #000;
+  font: 400 100%/1.5 'Source Sans Pro', arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p {
+  margin: 0 auto 1.75em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+  font-size: 1em;
+  color: #989898;
+  color: rgba(0,0,0,0.35)
+}
+
+ul{
+ margin-bottom: 1.75em;
+}
+
+figure img{
+ margin-bottom: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+p {
+}
+
+h4, strong, b {
+  font-weight: 700;
+}
+
+a {
+  color: #ed1c24;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+/* 
+  :: Misc
+*/
+
+.banner {
+  color: white;
+  padding: 0 5%;
+}
+
+.banner-title {
+  font-size: 3em;
+  color: #ed1c24;
+  font-family: "Alfa Slab One";
+  margin: 0;
+  line-height: 1em;
+}
+
+.banner-lead {
+  font-size: 2.25em;
+  color: white;
+  font-weight: 100;
+  margin: .3em 0 0;
+  line-height: 1.2em;
+}
+
+.yellow-gradient {
+  background: #ffffff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y4ZTZiOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWI2MzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f8e6b8 50%, #eab632 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f8e6b8), color-stop(100%,#eab632));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f8e6b8 50%,#eab632 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#f8e6b8 50%,#eab632 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f8e6b8 50%,#eab632 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#f8e6b8 50%,#eab632 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eab632',GradientType=0 );
+}
+
+.btn {
+  background: #e12b2a;
+  border: 1px solid #eb5959;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: black;
+  border-color: black !important;  
+  color: white;
+  text-decoration: none;
+}
+
+.btn-brochure {
+  width: 28%;
+  margin-bottom: 5em;
+}
+
+
+/*
+  ::Proportional Grid
+*/
+
+@viewport {
+  width: device-width;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1420px;
+  *zoom: 1;
+  max-width: 1440px;
+  background: white;
+  border-top: 18px solid #ed1c24;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row, section{
+  clear: both;
+  width: 100%;
+  float: left;
+}
+
+html{
+  -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+   hyphens: auto;
+}
+
+.col-3 {
+  width: 33.333333333%;
+  float: left;
+}
+
+
+/* 
+  :: Specifics
+*/
+
+/* Header */
+.slogan {
+  background: #cccccc;
+  font-family: "Alfa Slab One";
+  padding: 0 5% 0;v
+  margin: 0;
+  height: 363px;
+}
+
+.slogan h3 {
+  font-size: 2em;
+  line-height: 1.125em;
+}
+
+.slogan .red {
+  padding-top: .25em;
+  display: block;
+}
+
+.brand {
+  height: 363px;
+}
+
+.brand img {
+  max-width: 268px;
+}
+
+/* Enroll Top */
+.enroll-top {
+  background: #cccccc;
+  display: table-row;;
+  vertical-align: middle;
+  text-align: left;
+  height: 363px;
+}
+
+.enroll-top h3 {
+  background: black;
+  color: #ed1c24;
+  padding: 2em 0 .575em 60px;
+  font-size: 1.675em;
+  font-family: "Alfa Slab One";
+  margin: 0;
+}
+
+.enroll-top h4 {
+  font-size: 2em;
+  font-family: "Alfa Slab One";
+  margin: .675em 0 0 60px;
+}
+
+.enroll-top p {
+  font-size: 1.375em;
+  margin: 0 0 0 60px;
+  font-weight: 100;
+}
+
+
+/* Why */
+.why header {
+  background: url(../images/why-header.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 416px;
+}
+
+.learn-header {
+  background: url(../images/learn-header.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 847px;
+}
+
+.learn-title {
+  max-width: 25%;
+  margin: 0 auto 1em;
+  text-align: left;
+}
+
+.learn-content {
+  padding-top: 3em;
+}
+
+.learn-content p {
+  width: 25%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.why-list {
+  width: 33.333333%;
+  margin: 3em auto;
+  text-align: left;
+  padding: 0 60px;
+  font-weight: 600;
+  color: #ed1c24;
+}
+
+.why-list li {
+  margin-bottom: .5em;
+  list-style: disc;
+}
+
+.why-list span {
+  font-weight: 400;
+  color: black;
+}
+
+
+/* Learn */
+.image-callout {
+  position: absolute;
+  top: -40px;
+}
+
+.learn blockquote {
+  position: absolute;
+  bottom: .875em; right: 60px;
+  font-weight: 200;
+  color: #ed1c24;
+  font-size: 2.875em;
+  line-height: 1em;
+  text-align: left;
+  width: 358px;
+  border-top: 4px solid #ed1c24;
+  border-bottom: 4px solid #ed1c24;
+  padding: 1em 0 1em;
+}
+
+
+/* Skills */
+.skills {
+  margin-top: 5em;
+}
+
+.week {
+  float: left;
+  width: 33.333333333%;
+  padding: 0 60px;
+  margin-top: 3em;
+  padding-bottom: 3em;
+}
+
+.week:after {
+  content: "";
+  background: url(../images/arrow-red-right.png) 0 0 no-repeat;
+  width: 158px; height: 30px;
+  position: absolute;
+  top: 120px; right: -78px;
+}
+
+.weeks .week:last-child:after {
+  display: none;
+}
+
+.week-thumb {
+  border-radius: 50%;
+  width: 270px; height: 270px;
+  border: 8px solid #ed1c24;
+  overflow: hidden;
+  margin: 0 auto 2em;
+}
+
+.weeks h3 {
+  font-size: 2em;
+  color: #ed1c24;
+  font-family: "Alfa Slab One";
+  margin-bottom: .5em;
+}
+
+
+/* Affordable */
+.affordable-header {
+  background: url(../images/affordable-header.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 416px;  
+}
+
+.affordable-content {
+  width: 50%;
+  margin: 3em auto;
+  clear: both;
+}
+
+.alfa-head {
+  font-family: "Alfa Slab One";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.affordable-list {
+  float: left;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.affordable-list li {
+  margin-bottom: 16px;
+}
+
+.affordable-list .left {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.affordable-list .right {
+  float: right;
+  width: 50%;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.affordable-list:after {
+  content: "";
+  background: #ccc;
+  width: 1px; height: 100%;
+  position: absolute;
+  top: 0; left: 50%;
+}
+
+
+/* Job Placement */
+.job-placement {
+  background: #e5e5e5;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+.job-placement-content {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+
+.minor-lead {
+  font-size: 1.875em;
+  color: black;
+}
+
+
+/* Enroll */
+.enroll-header {
+  background: url(../images/enroll-header.jpg) 0 0 no-repeat; 
+  background-size: cover;
+  height: 416px;  
+}
+
+.enroll-bottom {
+  background: #eab632;
+  padding: 0 0 15em;
+}
+
+.enroll-bottom div {
+  width: 50%;
+  border: 1px solid white;
+  margin: 0 auto;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  top: -40px;
+}
+
+.name {
+  background: white;
+  padding: 1.5em 0 1.25em;
+}
+
+.name h3 {
+  font-family: "Alfa Slab One";
+  font-size: 2.125em;
+  color: #ed1c24;
+  margin: 0;
+}
+
+.name p {
+  font-size: 1.325em;
+  font-style: italic;
+  margin: 0;
+}
+
+.meta {
+  padding: 1.675em 0 2.25em;
+}
+
+.meta span, .meta strong, .meta a {
+  display: block;
+}
+
+.meta .phone {
+  font-size: 3em;
+  font-family: "Alfa Slab One";
+}
+
+.meta a {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ed1c24;
+}
+
+
+
+.week p, .learn p, .affordable-list, .why-list li {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+
+/* 
+  :: Media Queries
+*/
+
+
+@media screen and (max-width: 1300px) {
+  .image-callout {
+    width: 30%;
+  }
+
+  .week:after {
+    background-size: 100px 18px;
+    right: -108px;
+  }
+
+  .affordable-content {
+    width: 80%;
+  }
+
+  .job-placement-content {
+    padding-top: 7%;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.why-list, .btn-brochure {
+  width: 60%;
+}
+
+  .learn blockquote {
+    font-size: 2.25em;
+    width: 258px;
+  }
+
+  .affordable-content {
+    width: 90%;
+  }
+
+  .job-placement-content {
+    padding-top: 5%;
+  }
+
+  .minor-lead {
+    font-size: 2em;
+  }
+
+  .week:after {
+    display: none;
+  }
+
+  .banner-lead {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .minor-lead {
+    font-size: 1.5em;
+  }
+
+  .enroll-bottom div {
+    width: 90%;
+  }
+
+  .enroll-bottom {
+    padding-bottom: 3em;
+  }
+
+  .learn-header {
+    height: 607px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .enroll-top, .brand, .slogan {
+    height: 313px;
+  }
+
+  .slogan h3 {
+    font-size: 1.5em;
+  }
+
+  .enroll-top h3 {
+    padding-top: 2em;
+    font-size: 1.25em;
+  }
+
+  .enroll-top h4 {
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+
+  .enroll-top p {
+    font-size: 1.125em;
+  }
+
+  .enroll-top a {
+    font-size: 1em;
+  }
+
+  .why-list, .btn-brochure {
+    width: 80%;
+  }
+
+  .learn-title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .learn-content p {
+    width: 75%;
+  }
+
+  .image-callout {
+    position: relative;
+    width: auto;
+    margin: 2em 0;
+    top: 0;
+  }
+
+  .learn blockquote {
+    position: relative;
+    right: 0; top: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .week-thumb {
+    width: 250px; height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .container {
+    border-top-width: 9px;
+  }
+
+  .col-3, .half {
+    width: 100%;
+    height: auto;
+  }
+
+  .enroll-top {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  .enroll-top h3, .enroll-top h4, .enroll-top p, .enroll-top a {
+    display: inline-block;
+    padding: 0;
+    margin: 0 1%;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+  }
+
+  .why-list {
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .btn-brochure {
+    margin-bottom: 2em;
+  }
+
+  .affordable-header, .why header, .enroll-header {
+    height: 260px;
+  }
+
+  .week-thumb {
+    width: 200px; height: 200px;
+  }
+
+  .week {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-title {
+    font-size: 2.25em;
+  }
+
+  .banner-lead {
+    font-size: 1.875em;
+  }
+
+  .job-placement {
+    background: white;
+  }
+
+  .half img {
+    width: 66.666666%;
+  }
+
+  .job-placement-content {
+    margin-bottom: 5%;
+  }  
+
+  .learn-header {
+    height: 507px;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .learn-content {
+    padding-top: 1em;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+  }
+
+  .learn-header {
+    height: 247px;
+  }
+
+  .learn-content p, .week p, .affordable-list li {
+    width: 90%;
+    font-size: 1em; 
+    line-height: 1.25em;
+    margin-bottom: 1em;
+  }
+
+  .why-list li {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .skills {
+    margin-top: 2em;
+  }
+
+  .learn blockquote {
+    width: 90%;
+  }
+
+  .banner-lead {
+    font-size: 1.5em;
+  }
+
+  .weeks {
+    padding-bottom: 1em;
+  }
+
+  .week {
+    width: 100%;
+    margin: 2% 0 2%; 
+    padding: 0 5%;
+  }
+
+  .weeks h3 {
+    font-size: 1.375em;
+    margin-top: 10px;
+  }
+
+  .week-thumb {
+    margin: 0 40px 0 0;
+    float: left;
+    width: 150px; height: 150px;
+    border-width: 5px;
+  }
+
+  .alfa-head {
+    font-size: 1.125em;
+  }
+
+  .affordable-list .right, .affordable-list .left {
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .affordable-list:after {
+    display: none;
+  }
+
+  .affordable-content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .affordable-list {
+    margin-bottom: 1em;
+  }
+
+  .learn blockquote {
+    font-size: 1.5em;
+  }
+
+  .meta .phone {
+    font-size: 2em;
+  }
+
+  .meta a {
+    font-size: 1.25em;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .brand img {
+    width: 50%;
+  }
+
+  .why-list {
+    width: 100%;
+  }
+
+  .week-thumb {
+    width: 100px; height: 100px;
+    margin-right: 20px;
+  }
+
+  .week {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .week h3 {
+    margin-top: 0;
+  }
+
+  .banner-title {
+    font-size: 1.675em;
+  }
+
+  .affordable-header, .why header, .enroll-header {
+    height: 210px;
+  }
+
+  .enroll-top h3, .enroll-top h4, .enroll-top p, .enroll-top a {
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 680px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 680px) and (min--moz-device-pixel-ratio: 2),
+       screen and (min-width: 680px) and (-o-min-device-pixel-ratio: 2/1),
+       screen and (min-width: 680px) and (min-device-pixel-ratio: 2),
+       screen and (min-width: 680px) and (min-resolution: 192dpi),
+       screen and (min-width: 680px) and (min-resolution: 2dppx) {
+}
