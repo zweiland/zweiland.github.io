@@ -486,6 +486,28 @@ header h1 {
   }
 }
 
+/* PROTECTED PAGE  */
+
+#protectedPage form {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+form label, form input, form button.button {
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+form input {
+  height: 2rem;
+  line-height: 1rem;
+  padding: 21px 1rem;
+  font-size: 1rem;
+}
+
+
+/* PROJECT WRAPPER */
+
 #project .wrapper {
   max-width: 860px;
   font-size: 24px;
